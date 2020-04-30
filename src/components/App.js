@@ -253,19 +253,19 @@ export default function App() {
         <div>
             <div className="pt-3 pb-1" style={{background: '#0005'}}>
                 <Row className="text-center">
-                    <Col sm={4} className="d-none d-sm-block">
+                    <Col md={4} className="d-none d-md-block">
                         <h2 className="mb-0 text-primary text-left pt-1 mt-4 ml-5 cursor-default">OUTSIDE</h2>
                     </Col>
-                    <Col sm={4}>
+                    <Col md={4}>
                         <div className={classNames(timeTravelClass)}>
                             <div className="form-group">
                                 {sliders.map(([get, set, min, max, label, subtle], i) =>
-                                    <div key={i} className="px-3 px-sm-0">
+                                    <div key={i} className="px-3 pr-sm-5 px-md-0">
                                         <Row className="text-right text-info">
-                                            <Col xs={2} sm={4}>
+                                            <Col sm={2} md={4}>
                                                 <label className="h5 mt-1 pt-2">{label}</label>
                                             </Col>
-                                            <Col xs={10} sm={8}>
+                                            <Col sm={10} md={8}>
                                                 <input
                                                     type="range"
                                                     id={'slider-' + i}
@@ -290,7 +290,7 @@ export default function App() {
                             </div>
                         </div>
                     </Col>
-                    <Col sm={4} className="d-none d-sm-block">
+                    <Col md={4} className="d-none d-md-block">
                         <h2 className="text-primary text-right pt-1 mt-4 mr-5 cursor-default">INSIDE</h2>
                     </Col>
                 </Row>
