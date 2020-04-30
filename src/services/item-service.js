@@ -49,7 +49,7 @@ async function getCSV(url) {
 let rngPeople = seedrandom('people');
 
 let peopleListsPromise = Promise.all([
-    getCSV('data/singers.csv')
+    getCSV(process.env.PUBLIC_URL + '/data/singers.csv')
         .then(async rows => {
             let suspiciousDialogs = await findAllDialogs('suspicious');
             let friendlyDialogs = await findAllDialogs('friendly');
@@ -75,7 +75,7 @@ let peopleListsPromise = Promise.all([
                         return !this.hasConsumed && item.type === 'juice';
                     },
                     onConsume(item) {
-                        this.message = randomElement(seedrandom(this.id), sedatedDialogs);
+                        this.message = `"${randomElement(seedrandom(this.id), sedatedDialogs)}"`;
                         this.hasConsumed.length = 0;
                     },
                     onView() {
@@ -110,7 +110,7 @@ const yearGroupsPromise = Promise.all([
     //             emote: 'book',
     //         };
     //     })),
-    getCSV('data/headlines.csv')
+    getCSV(process.env.PUBLIC_URL + '/data/headlines.csv')
         .then(rows => rows.map((row, i) => {
             return {
                 type: 'event',
@@ -120,7 +120,7 @@ const yearGroupsPromise = Promise.all([
                 noSkeleton: true,
             };
         })),
-    getCSV('data/songs.csv')
+    getCSV(process.env.PUBLIC_URL + '/data/songs.csv')
         .then(rows => rows.map((row, i) => {
             return {
                 type: 'music',
@@ -136,11 +136,12 @@ const yearGroupsPromise = Promise.all([
     .then(parts => parts.flat())
     .then(items => groupBy(items, item => item.date.getFullYear()));
 
-const dinosaursPromise = getCSV('data/dinosaurs.csv')
+const dinosaursPromise = getCSV(process.env.PUBLIC_URL + '/data/dinosaurs.csv')
     .then(dinos => dinos.map((row, i) => {
         let omnivore = row.diet.toLowerCase().includes('omni');
         let carnivore = row.diet.toLowerCase().includes('carni');
-        let herbivore = row.diet.toLowerCase().includes('herbi');
+        // let herbivore = row.diet.toLowerCase().includes('herbi');
+        let herbivore = !omnivore && !carnivore;
         return {
             type: 'dino',
             // id: 'dino' + i,
@@ -262,8 +263,8 @@ async function randomPerson(rng, date) {
 
 async function randomFood(rng, date) {
     return randomChance(rng, .7)
-        ? randomElement(rng, foods)
-        : randomElement(rng, juices);
+        ? {...randomElement(rng, foods)}
+        : {...randomElement(rng, juices)};
 }
 
 async function randomTimeWitch(rng, date) {

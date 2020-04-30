@@ -253,19 +253,19 @@ export default function App() {
         <div>
             <div className="pt-3 pb-1" style={{background: '#0005'}}>
                 <Row className="text-center">
-                    <Col sm={4}>
-                        <h2 className="mb-0 text-primary text-left mt-5 ml-4">Outside</h2>
+                    <Col sm={4} className="d-none d-sm-block">
+                        <h2 className="mb-0 text-primary text-left pt-1 mt-4 ml-5 cursor-default">OUTSIDE</h2>
                     </Col>
                     <Col sm={4}>
                         <div className={classNames(timeTravelClass)}>
                             <div className="form-group">
                                 {sliders.map(([get, set, min, max, label, subtle], i) =>
-                                    <div key={i}>
+                                    <div key={i} className="px-3 px-sm-0">
                                         <Row className="text-right text-info">
-                                            <Col xs={4}>
-                                                <h5 className="mt-1 pt-2">{label}</h5>
+                                            <Col xs={2} sm={4}>
+                                                <label className="h5 mt-1 pt-2">{label}</label>
                                             </Col>
-                                            <Col xs={8}>
+                                            <Col xs={10} sm={8}>
                                                 <input
                                                     type="range"
                                                     id={'slider-' + i}
@@ -290,8 +290,8 @@ export default function App() {
                             </div>
                         </div>
                     </Col>
-                    <Col sm={4}>
-                        <h2 className="text-primary text-right mt-5 mr-4">Inside</h2>
+                    <Col sm={4} className="d-none d-sm-block">
+                        <h2 className="text-primary text-right pt-1 mt-4 mr-5 cursor-default">INSIDE</h2>
                     </Col>
                 </Row>
             </div>

@@ -1,7 +1,7 @@
 import * as reactIcons from 'react-icons/all';
 import {
     FaBone,
-    GiBestialFangs, GiDeathJuice,
+    GiBestialFangs,
     GiDinosaurBones,
     GiLockedBox,
     GiMusicSpell,
@@ -10,7 +10,8 @@ import {
     GiPawPrint,
     GiPerson,
     GiSkeleton,
-    GiSkullMask, GiWaterBottle
+    GiSkullMask,
+    GiWaterBottle
 } from 'react-icons/all';
 
 let CURSE_ICONS = Object.keys(reactIcons)
