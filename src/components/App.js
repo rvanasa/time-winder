@@ -7,7 +7,19 @@ import classNames from 'classnames/bind';
 import uid from 'uid';
 import {DragDropContext} from 'react-beautiful-dnd';
 import {findItemsByDate, MONTHS} from '../services/item-service';
-import {FaBone, FaDog} from 'react-icons/all';
+import {
+    AiFillLock,
+    AiOutlineLock, AiTwotoneLock,
+    FaBone,
+    FaDog,
+    FaLock,
+    FiLock, GiCogLock,
+    GiLockedBox, GiLockedChest, GiLockedFortress,
+    GoLock,
+    IoMdLock, MdBlock,
+    MdLock,
+    MdLockOutline
+} from 'react-icons/all';
 
 const reorder = (list, startIndex, endIndex) => {
     const result = Array.from(list);
@@ -217,9 +229,12 @@ export default function App() {
 
     let [minYear, maxYear] = [2003, 2019];
 
+    let maxDay = new Date(year, +month + 1, 0).getDate();
+    day = Math.min(day, maxDay);
+
     let sliders = [
         [month, setMonth, 0, 11, MONTHS[month].toUpperCase().slice(0, 3), year > maxYear],
-        [day, setDay, 1, new Date(year, month, 0).getDate(), day.toString().padStart(2, '0'), year > maxYear],
+        [day, setDay, 1, maxDay, day.toString().padStart(2, '0'), year > maxYear],
         [year, setYear, minYear, maxYear, year],
     ];
 
@@ -249,12 +264,19 @@ export default function App() {
         }
     }
 
+    let LockIcon = AiFillLock;
+
     return (
         <div>
             <div className="pt-3 pb-1" style={{background: '#0005'}}>
                 <Row className="text-center">
                     <Col md={4} className="d-none d-md-block">
-                        <h2 className="mb-0 text-primary text-left pt-1 mt-4 ml-5 cursor-default">OUTSIDE</h2>
+                        <h2 className="mb-0 text-primary text-left pt-1 mt-4 ml-5 cursor-default">
+                            OUTSIDE
+                            {contexts.today.locked && (
+                                <LockIcon className="text-muted ml-2" style={{marginTop: '-.25em', opacity: .6}}/>
+                            )}
+                        </h2>
                     </Col>
                     <Col md={4}>
                         <div className={classNames(timeTravelClass)}>
@@ -291,7 +313,12 @@ export default function App() {
                         </div>
                     </Col>
                     <Col md={4} className="d-none d-md-block">
-                        <h2 className="text-primary text-right pt-1 mt-4 mr-5 cursor-default">INSIDE</h2>
+                        <h2 className="text-primary text-right pt-1 mt-4 mr-5 cursor-default">
+                            {contexts.backpack.locked && (
+                                <LockIcon className="text-muted mr-2" style={{marginTop: '-.25em', opacity: .6}}/>
+                            )}
+                            INSIDE
+                        </h2>
                     </Col>
                 </Row>
             </div>
