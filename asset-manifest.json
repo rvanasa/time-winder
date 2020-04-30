@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "https://rvanasa.github.io/time-winder/static/css/main.c869633f.chunk.css",
-    "main.js": "https://rvanasa.github.io/time-winder/static/js/main.21d701db.chunk.js",
-    "main.js.map": "https://rvanasa.github.io/time-winder/static/js/main.21d701db.chunk.js.map",
+    "main.css": "https://rvanasa.github.io/time-winder/static/css/main.953e2d00.chunk.css",
+    "main.js": "https://rvanasa.github.io/time-winder/static/js/main.2c6e69d2.chunk.js",
+    "main.js.map": "https://rvanasa.github.io/time-winder/static/js/main.2c6e69d2.chunk.js.map",
     "runtime-main.js": "https://rvanasa.github.io/time-winder/static/js/runtime-main.aa122eab.js",
     "runtime-main.js.map": "https://rvanasa.github.io/time-winder/static/js/runtime-main.aa122eab.js.map",
     "static/js/2.fbf5095b.chunk.js": "https://rvanasa.github.io/time-winder/static/js/2.fbf5095b.chunk.js",
     "static/js/2.fbf5095b.chunk.js.map": "https://rvanasa.github.io/time-winder/static/js/2.fbf5095b.chunk.js.map",
     "index.html": "https://rvanasa.github.io/time-winder/index.html",
-    "precache-manifest.b60f2ad288090aa3156cf649197e6c26.js": "https://rvanasa.github.io/time-winder/precache-manifest.b60f2ad288090aa3156cf649197e6c26.js",
+    "precache-manifest.04c54ba4ab2f6e00a2f23e385516b984.js": "https://rvanasa.github.io/time-winder/precache-manifest.04c54ba4ab2f6e00a2f23e385516b984.js",
     "service-worker.js": "https://rvanasa.github.io/time-winder/service-worker.js",
-    "static/css/main.c869633f.chunk.css.map": "https://rvanasa.github.io/time-winder/static/css/main.c869633f.chunk.css.map",
+    "static/css/main.953e2d00.chunk.css.map": "https://rvanasa.github.io/time-winder/static/css/main.953e2d00.chunk.css.map",
     "static/js/2.fbf5095b.chunk.js.LICENSE.txt": "https://rvanasa.github.io/time-winder/static/js/2.fbf5095b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.aa122eab.js",
     "static/js/2.fbf5095b.chunk.js",
-    "static/css/main.c869633f.chunk.css",
-    "static/js/main.21d701db.chunk.js"
+    "static/css/main.953e2d00.chunk.css",
+    "static/js/main.2c6e69d2.chunk.js"
   ]
 }
