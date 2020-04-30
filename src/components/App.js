@@ -274,7 +274,7 @@ export default function App() {
                         <h2 className="mb-0 text-primary text-left pt-1 mt-4 ml-5 cursor-default">
                             OUTSIDE
                             {contexts.today.locked && (
-                                <LockIcon className="text-muted ml-2" style={{marginTop: '-.25em', opacity: .6}}/>
+                                <LockIcon className="text-muted ml-3" style={{marginTop: '-.25em', opacity: .6}}/>
                             )}
                         </h2>
                     </Col>
@@ -284,10 +284,10 @@ export default function App() {
                                 {sliders.map(([get, set, min, max, label, subtle], i) =>
                                     <div key={i} className="px-3 pr-sm-5 px-md-0">
                                         <Row className="text-right text-info">
-                                            <Col sm={2} md={4}>
+                                            <Col xs={2} className="pl-0">
                                                 <label className="h5 mt-1 pt-2">{label}</label>
                                             </Col>
-                                            <Col sm={10} md={8}>
+                                            <Col xs={10} className="p-0">
                                                 <input
                                                     type="range"
                                                     id={'slider-' + i}
@@ -315,7 +315,7 @@ export default function App() {
                     <Col md={4} className="d-none d-md-block">
                         <h2 className="text-primary text-right pt-1 mt-4 mr-5 cursor-default">
                             {contexts.backpack.locked && (
-                                <LockIcon className="text-muted mr-2" style={{marginTop: '-.25em', opacity: .6}}/>
+                                <LockIcon className="text-muted mr-3" style={{marginTop: '-.25em', opacity: .6}}/>
                             )}
                             INSIDE
                         </h2>
