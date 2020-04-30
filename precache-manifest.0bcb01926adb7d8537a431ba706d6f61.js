@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a700e3df225969ae3ea8ff87c39a0612",
+    "revision": "32247a68e36381abf3b198b86bc3135f",
     "url": "https://rvanasa.github.io/time-winder/index.html"
   },
   {
-    "revision": "3bd6f165a819cbd66001",
+    "revision": "1c8722843202078a7084",
     "url": "https://rvanasa.github.io/time-winder/static/css/main.953e2d00.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://rvanasa.github.io/time-winder/static/js/2.fbf5095b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3bd6f165a819cbd66001",
-    "url": "https://rvanasa.github.io/time-winder/static/js/main.72b299fa.chunk.js"
+    "revision": "1c8722843202078a7084",
+    "url": "https://rvanasa.github.io/time-winder/static/js/main.13cbac71.chunk.js"
   },
   {
     "revision": "e2f814573f72e644934b",

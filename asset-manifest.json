@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "https://rvanasa.github.io/time-winder/static/css/main.953e2d00.chunk.css",
-    "main.js": "https://rvanasa.github.io/time-winder/static/js/main.72b299fa.chunk.js",
-    "main.js.map": "https://rvanasa.github.io/time-winder/static/js/main.72b299fa.chunk.js.map",
+    "main.js": "https://rvanasa.github.io/time-winder/static/js/main.13cbac71.chunk.js",
+    "main.js.map": "https://rvanasa.github.io/time-winder/static/js/main.13cbac71.chunk.js.map",
     "runtime-main.js": "https://rvanasa.github.io/time-winder/static/js/runtime-main.aa122eab.js",
     "runtime-main.js.map": "https://rvanasa.github.io/time-winder/static/js/runtime-main.aa122eab.js.map",
     "static/js/2.fbf5095b.chunk.js": "https://rvanasa.github.io/time-winder/static/js/2.fbf5095b.chunk.js",
     "static/js/2.fbf5095b.chunk.js.map": "https://rvanasa.github.io/time-winder/static/js/2.fbf5095b.chunk.js.map",
     "index.html": "https://rvanasa.github.io/time-winder/index.html",
-    "precache-manifest.fb9257a6d81e0a2248ce7c2257b403ac.js": "https://rvanasa.github.io/time-winder/precache-manifest.fb9257a6d81e0a2248ce7c2257b403ac.js",
+    "precache-manifest.0bcb01926adb7d8537a431ba706d6f61.js": "https://rvanasa.github.io/time-winder/precache-manifest.0bcb01926adb7d8537a431ba706d6f61.js",
     "service-worker.js": "https://rvanasa.github.io/time-winder/service-worker.js",
     "static/css/main.953e2d00.chunk.css.map": "https://rvanasa.github.io/time-winder/static/css/main.953e2d00.chunk.css.map",
     "static/js/2.fbf5095b.chunk.js.LICENSE.txt": "https://rvanasa.github.io/time-winder/static/js/2.fbf5095b.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.aa122eab.js",
     "static/js/2.fbf5095b.chunk.js",
     "static/css/main.953e2d00.chunk.css",
-    "static/js/main.72b299fa.chunk.js"
+    "static/js/main.13cbac71.chunk.js"
   ]
 }
