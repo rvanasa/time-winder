@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://rvanasa.github.io/time-winder/precache-manifest.05baf2f5e6ce9bc1654cd4ed13e7b7fc.js"
+  "https://rvanasa.github.io/time-winder/precache-manifest.d256d48d84ef5bfba26011e6b16bdc33.js"
 );
 
 self.addEventListener('message', (event) => {
