@@ -1,0 +1,115 @@
+
+.time-traveling .inventory {
+  filter: blur(2px);
+}
+
+.inventory-item {
+  background: #1119;
+
+  &:hover {
+    background: #111A;
+    box-shadow: 2px 4px 0 #1115;
+  }
+
+  &:active {
+    background: #111C;
+  }
+
+  &.locked {
+    color: #443333;
+  }
+
+  &.neutral {
+    color: #FFC107;
+    animation: shake 10s infinite alternate-reverse ease-in-out;
+  }
+
+  &.angry {
+    color: #DC3545;
+    animation: shake .4s infinite;
+  }
+
+  &.music {
+    color: #9b60ce;
+  }
+
+  &.friendly {
+    color: #28A745;
+  }
+
+  &.witch {
+    color: #ff00f2;
+    animation: shake-scale .5s infinite;
+    box-shadow: 0 0 10em #DC3545;
+  }
+
+  &.cursed {
+    color: #d512cb;
+    animation: shake-scale 1.2s infinite;
+
+    & .item-date {
+      color: #ff8400 !important;
+    }
+  }
+
+  &.suspicious {
+    color: #87b115;
+  }
+
+  &.food {
+    color: #a37a5b;
+  }
+
+  &.juice {
+    color: #9c9442;
+  }
+}
+
+//@keyframes emote-angry {
+//  from {
+//    filter: blur(10px);
+//  }
+//  20% {
+//    filter: motionBlur(0px);
+//  }
+//  to {
+//    filter: motionBlur(10px);
+//  }
+//}
+
+
+@keyframes shake-scale {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  10% {
+    transform: scale(1.01) rotate(-1deg);
+  }
+  20% {
+    transform: scale(.98) rotate(1deg);
+  }
+  30% {
+    transform: scale(1.02) rotate(0deg);
+  }
+  40% {
+    transform: scale(1) rotate(1deg);
+  }
+  50% {
+    transform: scale(.95) rotate(-1deg);
+  }
+  60% {
+    transform: scale(.97) rotate(0deg);
+  }
+  70% {
+    transform: scale(.99) rotate(-1deg);
+  }
+  80% {
+    transform: scale(.96) rotate(1deg);
+  }
+  90% {
+    transform: scale(1.05) rotate(0deg);
+  }
+  100% {
+    transform: scale(1.02) rotate(-1deg);
+  }
+}

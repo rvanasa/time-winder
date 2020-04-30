@@ -1,0 +1,72 @@
+const DIALOG = {
+    suspicious: [
+        'Yeah, sure, sure.',
+        'Time traveler? I doubt it.',
+        'Okay then, McFly.',
+        'Seems like the paparazzi are getting desperate.',
+        'I have no reason to believe you.',
+        'Nice costume.',
+    ],
+    friendly: [
+        'What the heck...',
+        'How??',
+        'How is this possible?',
+        'Do you have flying cars yet?',
+        'It\'s true!',
+        'I\'m just not going to question this.',
+        'Is this a dream?',
+        'Wow. Okay. Time traveler. Fair enough.',
+        'I can\'t believe it!',
+        'Do you have an extra seat?',
+        'Can you bring me along?',
+        'Please let me come with you.',
+        'Mind if I tag along?',
+        'It\'s a miracle!',
+    ],
+    sedated: [
+        'Zzzzzz...',
+        'I\'mma take a nap.',
+        'What did you put in this?',
+        'I don\'t think that was juice.',
+        'Something isn\'t right...',
+        'Whoa...',
+    ],
+    curse: [
+        'YOU HAVE TRESPASSED ON SACRED GROUND',
+        'TIME TRAVELERS ARE UNWELCOME HERE',
+        'BURN',
+        'BURN',
+        'BEGONE',
+        'GO',
+        'LEAVE',
+        'RUN',
+        'AWAY',
+        'FLEE',
+        'HEATHEN',
+        'TIME-CRAWLER',
+        'DESECRATOR',
+        'FOE OF THE TEMPORAL DEMON',
+        'DEFILER',
+        'YOU DID NOT LISTEN',
+        'BLOOD WILL BE SPILLED',
+        'WE DO NOT TAKE KINDLY TO YOUR PRESENCE',
+        'LEAVE WHILE YOU HAVE THE CHANCE',
+        'TIME-WEEVIL',
+        'FIEND',
+        'WE SHALL NOT BE CONTAINED',
+        'SACRIFICE',
+        'AWAY',
+        'THE BAT WILL FIND YOU',
+        'OUT',
+        'TOO FAR',
+        'REJOICE',
+        'YOUR KIND HAVE NO PLACE HERE',
+    ],
+};
+
+export async function findAllDialogs(type) {
+    if(!DIALOG.hasOwnProperty(type)) {
+        throw new Error('Unknown dialog type: ' + type);
+    }
+    return DIALOG[type];
+}

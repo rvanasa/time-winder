@@ -1,0 +1,53 @@
+{
+  "name": "time-winder",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-scripts": "3.4.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "bootswatch": "^4.4.1",
+    "classnames": "^2.2.6",
+    "customize-cra": "^0.9.1",
+    "customize-cra-react-refresh": "^1.0.1",
+    "gh-pages": "^2.2.0",
+    "node-sass": "^4.13.1",
+    "papaparse": "^5.2.0",
+    "react-app-rewired": "^2.1.5",
+    "react-beautiful-dnd": "^13.0.0",
+    "react-bootstrap": "^1.0.0-beta.17",
+    "react-icons": "^3.9.0",
+    "react-router-dom": "^5.1.2",
+    "seedrandom": "^3.0.5",
+    "uid": "^1.0.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "deploy": "npm run build && gh-pages -d build --branch master --repo https://github.com/rvanasa/rvanasa.github.io",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

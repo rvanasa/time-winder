@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+
+$font-family-sans-serif: 'Share Tech Mono', sans-serif;
+$headings-font-family: 'Share Tech Mono', sans-serif;
+$headings-font-weight: 200;
+
+$spacer: 1em;
+
+//$primary: #7D61C8;
+//$secondary: #ffffff;
+//$light: #f1f1f1;
+//$dark: #000000;
+
+@import '../../node_modules/bootswatch/dist/slate/variables';
+@import 'mixins/bootstrap';
+@import '../../node_modules/bootswatch/dist/slate/bootswatch';
+
+@import "mixins/scrollbar";
+@import "mixins/wiggle";
+
+
+html, body {
+  overflow-x: hidden;
+}
+
+
+//.cursor-default {
+//  cursor: default;
+//}
+
+.clickable {
+  cursor: pointer;
+  transition: .2s ease-out;
+  transition-property: color, background, opacity;
+}
+
+.clickable:hover {
+  transition: .05s ease-out;
+  transform: scaleX(1.05);
+}
+
+.noselect {
+  user-select: none;
+}
+
+::selection {
+  background: #AAA;
+}
