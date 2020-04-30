@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9477164fd3c828367a85e2478be76b90",
+    "revision": "78df4f591a3f45a969c945d718c42844",
     "url": "https://rvanasa.github.io/time-winder/index.html"
   },
   {
