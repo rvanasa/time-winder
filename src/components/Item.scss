@@ -30,7 +30,19 @@
 
   &.angry {
     color: #DC3545;
-    animation: shake .4s infinite;
+    animation: shake 5s infinite;
+
+    &.consumed-0 {
+      animation: shake .4s infinite;
+    }
+
+    &.consumed-1 {
+      animation: shake .8s alternate-reverse infinite;
+    }
+
+    &.consumed-2 {
+      animation: shake 1.5s alternate-reverse infinite;
+    }
   }
 
   &.music {

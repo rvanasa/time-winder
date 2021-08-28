@@ -137,14 +137,13 @@ const yearGroupsPromise = Promise.all([
     .then(items => groupBy(items, item => item.date.getFullYear()));
 
 const dinosaursPromise = getCSV(process.env.PUBLIC_URL + '/data/dinosaurs.csv')
-    .then(dinos => dinos.map((row, i) => {
+    .then(dinos => dinos.map(row => {
         let omnivore = row.diet.toLowerCase().includes('omni');
         let carnivore = row.diet.toLowerCase().includes('carni');
         // let herbivore = row.diet.toLowerCase().includes('herbi');
         let herbivore = !omnivore && !carnivore;
         return {
             type: 'dino',
-            // id: 'dino' + i,
             title: row.name,
             message: row.diet.toUpperCase().replace('?', ''),
             date: row.period.toUpperCase(),

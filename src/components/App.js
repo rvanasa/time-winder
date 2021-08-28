@@ -7,19 +7,7 @@ import classNames from 'classnames/bind';
 import uid from 'uid';
 import {DragDropContext} from 'react-beautiful-dnd';
 import {findItemsByDate, MONTHS} from '../services/item-service';
-import {
-    AiFillLock,
-    AiOutlineLock, AiTwotoneLock,
-    FaBone,
-    FaDog,
-    FaLock,
-    FiLock, GiCogLock,
-    GiLockedBox, GiLockedChest, GiLockedFortress,
-    GoLock,
-    IoMdLock, MdBlock,
-    MdLock,
-    MdLockOutline
-} from 'react-icons/all';
+import {AiFillLock, FaBone, FaDog} from 'react-icons/all';
 
 const reorder = (list, startIndex, endIndex) => {
     const result = Array.from(list);
@@ -264,17 +252,16 @@ export default function App() {
         }
     }
 
-    let LockIcon = AiFillLock;
-
     return (
         <div>
             <div className="pt-3 pb-1" style={{background: '#0005'}}>
                 <Row className="text-center">
-                    <Col md={4} className="d-none d-md-block">
+                    <Col md={1}/>
+                    <Col md={3} className="d-none d-md-block">
                         <h2 className="mb-0 text-primary text-left pt-1 mt-4 ml-5 cursor-default">
                             OUTSIDE
                             {contexts.today.locked && (
-                                <LockIcon className="text-muted ml-3" style={{marginTop: '-.25em', opacity: .6}}/>
+                                <AiFillLock className="text-light ml-3" style={{marginTop: '-.25em', opacity: .6}}/>
                             )}
                         </h2>
                     </Col>
@@ -294,10 +281,11 @@ export default function App() {
                                                     className="form-control"
                                                     min={min}
                                                     max={max}
-                                                    style={{opacity: subtle ? .2 : 1}}
+                                                    style={{opacity: subtle ? .2 : 1, pointerEvents: subtle && 'none'}}
                                                     value={Math.min(max, Math.max(min, get))}
                                                     onChange={e => {
                                                         setTodayItems(null);
+                                                        setYear(Math.min(year, maxYear)); ///
                                                         set(e.target.value);
                                                     }}
                                                     onMouseDown={() => setTimeTravelClass('time-traveling')}
@@ -312,27 +300,30 @@ export default function App() {
                             </div>
                         </div>
                     </Col>
-                    <Col md={4} className="d-none d-md-block">
+                    <Col md={3} className="d-none d-md-block">
                         <h2 className="text-primary text-right pt-1 mt-4 mr-5 cursor-default">
                             {contexts.backpack.locked && (
-                                <LockIcon className="text-muted mr-3" style={{marginTop: '-.25em', opacity: .6}}/>
+                                <AiFillLock className="text-light mr-3" style={{marginTop: '-.25em', opacity: .6}}/>
                             )}
                             INSIDE
                         </h2>
                     </Col>
+                    <Col md={1}/>
                 </Row>
             </div>
             <DragDropContext onDragEnd={onDragEnd}>
                 <div className={classNames(timeTravelClass)}>
                     <Row>
-                        <Col md={6}>
+                        <Col md={1}/>
+                        <Col md={5}>
                             {inventories.today && travelDate.getFullYear() <= maxYear && (
                                 <Inventory name="today" inventories={inventories}/>
                             )}
                         </Col>
-                        <Col md={6}>
+                        <Col md={5}>
                             <Inventory name="backpack" inventories={inventories}/>
                         </Col>
+                        <Col md={1}/>
                     </Row>
                 </div>
             </DragDropContext>

@@ -4,7 +4,11 @@ body {
 }
 
 .time-traveling {
-  animation: shake 0.5s infinite, color-cycle .5s infinite;
+  animation: shake .5s infinite, color-cycle .5s infinite;
+}
+
+.time-wiggle {
+  animation: shake-symmetric 2s infinite;
 }
 
 .time-jump-left {
