@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "https://rvanasa.github.io/time-winder/static/css/main.f1f6b703.chunk.css",
-    "main.js": "https://rvanasa.github.io/time-winder/static/js/main.5f2c3c86.chunk.js",
-    "main.js.map": "https://rvanasa.github.io/time-winder/static/js/main.5f2c3c86.chunk.js.map",
-    "runtime-main.js": "https://rvanasa.github.io/time-winder/static/js/runtime-main.aa122eab.js",
-    "runtime-main.js.map": "https://rvanasa.github.io/time-winder/static/js/runtime-main.aa122eab.js.map",
-    "static/js/2.274eeead.chunk.js": "https://rvanasa.github.io/time-winder/static/js/2.274eeead.chunk.js",
-    "static/js/2.274eeead.chunk.js.map": "https://rvanasa.github.io/time-winder/static/js/2.274eeead.chunk.js.map",
-    "index.html": "https://rvanasa.github.io/time-winder/index.html",
-    "precache-manifest.66f93597e6b982613992794cfc40c2d7.js": "https://rvanasa.github.io/time-winder/precache-manifest.66f93597e6b982613992794cfc40c2d7.js",
-    "service-worker.js": "https://rvanasa.github.io/time-winder/service-worker.js",
-    "static/css/main.f1f6b703.chunk.css.map": "https://rvanasa.github.io/time-winder/static/css/main.f1f6b703.chunk.css.map",
-    "static/js/2.274eeead.chunk.js.LICENSE.txt": "https://rvanasa.github.io/time-winder/static/js/2.274eeead.chunk.js.LICENSE.txt"
+    "main.css": "https://www.ryanvandersmith.com/time-winder/static/css/main.f1f6b703.chunk.css",
+    "main.js": "https://www.ryanvandersmith.com/time-winder/static/js/main.051e92cd.chunk.js",
+    "main.js.map": "https://www.ryanvandersmith.com/time-winder/static/js/main.051e92cd.chunk.js.map",
+    "runtime-main.js": "https://www.ryanvandersmith.com/time-winder/static/js/runtime-main.61bef769.js",
+    "runtime-main.js.map": "https://www.ryanvandersmith.com/time-winder/static/js/runtime-main.61bef769.js.map",
+    "static/js/2.274eeead.chunk.js": "https://www.ryanvandersmith.com/time-winder/static/js/2.274eeead.chunk.js",
+    "static/js/2.274eeead.chunk.js.map": "https://www.ryanvandersmith.com/time-winder/static/js/2.274eeead.chunk.js.map",
+    "index.html": "https://www.ryanvandersmith.com/time-winder/index.html",
+    "precache-manifest.dd8ffd0579e913d2be56c7ca8dc276bc.js": "https://www.ryanvandersmith.com/time-winder/precache-manifest.dd8ffd0579e913d2be56c7ca8dc276bc.js",
+    "service-worker.js": "https://www.ryanvandersmith.com/time-winder/service-worker.js",
+    "static/css/main.f1f6b703.chunk.css.map": "https://www.ryanvandersmith.com/time-winder/static/css/main.f1f6b703.chunk.css.map",
+    "static/js/2.274eeead.chunk.js.LICENSE.txt": "https://www.ryanvandersmith.com/time-winder/static/js/2.274eeead.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.aa122eab.js",
+    "static/js/runtime-main.61bef769.js",
     "static/js/2.274eeead.chunk.js",
     "static/css/main.f1f6b703.chunk.css",
-    "static/js/main.5f2c3c86.chunk.js"
+    "static/js/main.051e92cd.chunk.js"
   ]
 }
